@@ -71,6 +71,7 @@ $(document).ready(function() {
   $("#owl-demo").owlCarousel({
     autoplay: true,
     autoplayTimeout: 3000,
+    loop:true,
     items: 3,
     margin: 20,   // 👈 space between items
     responsive:{
@@ -120,7 +121,7 @@ $(".testimonial-carousel").owlCarousel({
     ],
   dots: false,
   autoplay: true,
-  autoplayTimeout: 3000,
+  autoplayTimeout: 4000,
   responsive:{
     0:{ items:1 },
     768:{ items:1.5 },
@@ -138,4 +139,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-      AOS.init();
+     AOS.init({
+  once: true,          
+  mirror: false      
+});
