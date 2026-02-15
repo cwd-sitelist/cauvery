@@ -80,15 +80,19 @@ transition:opacity 0.6s ease;
 .menu-toggle {
     cursor: pointer;
     border: 1px solid var( --primary-color);
-        padding: 11px 12px;
+        padding: 11px 13px;
+       background: #3c55557a;
+           border-radius: 5px;
 }
-
+.menu-toggle:hover{
+background: #4a8d8d7a;
+}
 .menu-toggle span {
     display: block;
     width: 18px;
     height: 1px;
     background: var( --primary-color);
-    margin: 6px 0;
+    margin: 7px 0;
     transition: 0.4s;
 }
 .menu-toggle.active{
@@ -127,8 +131,9 @@ transition:opacity 0.6s ease;
   background: var(--tertiary-color);
 }
 
-.header.scrolled .menu-toggle{
-      border: 1px solid var(--black-color);
+.header.scrolled .menu-toggle {
+    border: 1px solid var(--black-color);
+    background: #d4e3e37a;
 }
 .header.scrolled .menu-toggle span{
   background: var(--black-color);
@@ -255,7 +260,7 @@ transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   font-size:1rem;
 }
 p.reveal-text {
-    font-size: 54px;
+    font-size: 51px;
     font-family: var(--secondary-font);
     font-weight: 400;
     text-transform: uppercase;
@@ -421,14 +426,16 @@ a{
     padding: 0px 70px 0px 40px;
 }
 .section-title__inner p{
-  font-size: 25px;
+  font-size: 24px;
       margin: 15px 0px 30px 0px;
+          width: 290px;
 }
 .img-cnt-inner {
     color: var( --white-color);
 }
 .img-cnt-inner span {
     font-size: 24px;
+    line-height: 1.5;
 }
 .img-cnt-inner p {
     display: flex;
@@ -445,6 +452,8 @@ a{
 }
 .right-imgprt {
     position: relative;
+    max-width: 33rem;
+    max-height: 100vh;
 }
 .img-cont {
     position: absolute;
@@ -453,12 +462,15 @@ a{
     right: 20px;
 }
 .img-cnt-inner img {
-    width: 45px;
+    width: 50px;
     filter: invert(1);
 }
 .img-cnt-inner p {
-    border-bottom: 1px solid var( --white-color);
-        padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff8a;
+       padding: 0px 10px 10px;
+}
+.pro-read a span {
+    padding-left: 5px;
 }
 #owl-demo .item{
   margin: 3px;
@@ -639,7 +651,7 @@ border-color:var(--secondary-color);
 }
 .testimonial-card {
   transform: scale(0.85);
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transition: all 0.4s ease;
 }
 
@@ -684,14 +696,14 @@ position: relative;
 }
 
 .testimonial-card p {
-  font-size: 22px;
+  font-size: 21px;
   line-height: 1.5;
 }
 
 /* Colors */
-.orange { background: #825182; }
-.pink { background: #bdc066; }
-.brown { background: #b7946f }
+.orange { background: #753475; }
+.pink { background: #538851; }
+.brown { background: #83603b; }
 
 /* Center active item */
 .owl-item.center .testimonial-card {
@@ -725,9 +737,13 @@ text-align: center;
 
 .parallax-text {
   position: relative;
-  font-size: 30px;
+  font-size: 45px;
   z-index: 2;
   font-family: var(--secondary-font);
+  font-weight: 400;
+        width: 710px;
+    margin: 0 auto;
+        line-height: 44px;
 }
 .footerlogo img {
     width: 150px;
@@ -764,19 +780,28 @@ p.small {
 }
 .testimonial-carousel .owl-nav i{
     border: 1px solid var( --black-color);
-    padding: 10px;
-    width: 40px;
-    height: 40px;
+      padding: 14px 0px 14px 0px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+}
+.testimonial-carousel .owl-nav i:before{
+  font-size: 20px;
 }
 .testimonial-carousel .owl-nav button{
  margin: 20px 10px 0px;
+}
+.row.copyright a {
+    color: var(--secondary-color);
 }
 
 footer.footer{
     background: var( --bg-color);
     border-top: 1px solid #eee;
         padding-top: 20px;
+}
+.foo-menus .col-md-4{
+  padding-left: 4%;
 }
 /* .pro-read a:hover{
   background: transparent!important;
@@ -786,6 +811,10 @@ footer.footer{
 }
 .testimonial_strawberry img {
     width: 100px;
+}
+.foo-menus .col-md-4 {
+    padding-left: 18%;
+    padding-right: 0px;
 }
 p.cauvery-cpy {
     font-size: 14px;
@@ -894,6 +923,7 @@ p.small {
 }
 .section-title__inner p {
     font-size: 16px;
+
 }
 
 .main-title img {
@@ -902,4 +932,45 @@ p.small {
 .tagline {
     font-size: 12px;
 }
+}
+
+ .scroll .line .line-inner {
+    animation: linearMove 2s cubic-bezier(.65, 0, .35, 1) infinite;
+    background-color: var(--secondary-color);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+ .scroll .line {
+    background-color: var(--primary-color);
+    height: 95px;
+    margin: 10px 0 0;
+    overflow: hidden;
+    position: relative;
+    width: 2px;
+}
+ .scroll span {
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+}
+ .scroll {
+    align-items: center;
+    bottom: -44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+@keyframes linearMove {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    to {
+        transform: translateY(100%)
+    }
 }
