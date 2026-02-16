@@ -129,15 +129,25 @@ $(".testimonial-carousel").owlCarousel({
   }
 });
 
-window.addEventListener("scroll", () => {
-  requestAnimationFrame(() => {
-    if (window.scrollY > 50) {
+document.addEventListener("DOMContentLoaded", function () {
+
+  const header = document.querySelector(".header");
+  const hero = document.querySelector(".hero");
+
+  window.addEventListener("scroll", function () {
+
+    const heroBottom = hero.getBoundingClientRect().bottom;
+
+    if (heroBottom <= 0) {
       header.classList.add("scrolled");
     } else {
       header.classList.remove("scrolled");
     }
+
   });
+
 });
+
 
      AOS.init({
   once: true,          
