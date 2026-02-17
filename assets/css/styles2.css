@@ -253,6 +253,12 @@ transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   .menu-right p{
     font-family: var(--primary-font);
   }
+  .menu-item.active{
+    color:var(--secondary-color); 
+  }
+  .menu-item.active:hover .bottom{
+    color:var(--secondary-color); 
+  }
 .menu-right{
   width:30%;
   opacity:0;
@@ -524,9 +530,9 @@ color:var(--primary-color);
   border-color: var(--secondary-color);
   color: var(--secondary-color);
 } */
- .products .owl-theme .owl-dots .owl-dot span{
+ /* .products .owl-theme .owl-dots .owl-dot span{
   background:var(--primary-color);
- }
+ } */
   .products .owl-theme .owl-dots .owl-dot.active span{
   background:var(--secondary-color);
  }
