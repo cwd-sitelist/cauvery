@@ -130,7 +130,11 @@ background: #4a8d8d7a;
 .btn-read:hover {
   background: var(--tertiary-color);
 }
-
+.col img {
+    width: 20px;
+    filter: invert(1);
+    margin-right: 5px;
+}
 .header.scrolled .menu-toggle {
     border: 1px solid var(--black-color);
     background: #d4e3e37a;
@@ -1335,12 +1339,11 @@ p.small {
 
 
 .main-footer{
-      background-color: #344128;
-    color: #f4eddd;
+      background-color: var(--secondary-color);
+    color: var(--white-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 450px;
     min-height: 100vh;
     min-height: 100svh;
     padding: 60px 0 0;
@@ -1350,13 +1353,14 @@ p.small {
   height: auto;
     position: relative;
     width: 100%;
+    text-align: center;
 }
 .footer-inner{
 box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 250px auto 0;
+    margin: 80px auto 0;
     padding: 0 48px;
     position: relative;
     width: 100%;
@@ -1401,8 +1405,90 @@ box-sizing: border-box;
 .links a,.links span{
           font-size: 14px;
         width: 190px;
+        font-family: var(--secondary-font);
   
 }
-.footer .columns .col.legal-col {
+.main-footer .columns .col.legal-col {
     display: none;
+}
+
+.newsletter-field  input {
+    background: #f4eddd;
+    border: none;
+    border-radius: 4px;
+    color: #34412899;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 1.02vw .8vw;
+    position: relative;
+    width: 100%;
+    font-family: var(--primary-font);
+}
+.newsletter-field  button {
+    align-items: center;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    height: 2.8vw;
+    justify-content: center;
+    position: absolute;
+    right: .2vw;
+    top: .2vw;
+    transition: background .3s ease-in-out, opacity .2s ease-in-out;
+    width: 40px;
+}
+.disclaimer a{
+  color: var(--white-color);
+  text-decoration: underline;
+}
+p.disclaimer {
+    color: var(--white-color);
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 16px 0 0;
+    position: relative;
+    font-family: var(--primary-font);
+}
+.columns .col ul li {
+    margin: 0 0 12px;
+    position: relative;
+    text-align: left;
+}
+.columns .col ul li a{
+color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .9;
+    position: relative;
+    text-decoration: none;
+    transition: opacity .3s ease-in-out;
+}
+.columns .col ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.col h4 {
+    font-weight: 400;
+    margin: 0 0 32px;
+    position: relative;
+    font-size: 18px;
+}
+
+.footer-logo img {
+    width: 400px;
+}
+.imgside{
+     height: 450px;
+    left: 0;
+    position: absolute;
+    top: unset;
+    transform: translateY(-50%);
+    bottom: -175px;
+    object-fit: contain;
 }
