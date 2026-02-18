@@ -1460,6 +1460,11 @@ p.disclaimer {
     margin: 0 0 12px;
     position: relative;
     text-align: left;
+    list-style: none;
+}
+.columns .col ul{
+      margin: 0px;
+    padding-left: 0px;
 }
 .columns .col ul li a{
 color: var(--white-color);
