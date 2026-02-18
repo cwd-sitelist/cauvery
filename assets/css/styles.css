@@ -428,7 +428,7 @@ a{
 .section-title__inner p{
   font-size: 24px;
       margin: 15px 0px 30px 0px;
-          width: 290px;
+          width: 388px;
 }
 .img-cnt-inner {
     color: var( --white-color);
@@ -1010,3 +1010,4 @@ p.small {
         transform: translateY(100%)
     }
 }
+
